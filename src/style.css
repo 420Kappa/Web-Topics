@@ -1134,6 +1134,7 @@ body {
 }
 
 .container {
+  width: 100%;
   position: relative;
   transform: translateZ(0) translateX(0) rotateY(0deg);
   min-height: 100%;
@@ -1646,10 +1647,6 @@ video {
   --tw-backdrop-opacity: ;
   --tw-backdrop-saturate: ;
   --tw-backdrop-sepia:
-}
-
-.container {
-  width: 100%
 }
 
 .visible {

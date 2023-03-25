@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>A-car</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <p>A-car</p>
+    </a>
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <p>A-car</p>
+            </a>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Home</span></li>
+              <li><span>Cars</span></li>
+              <li><span>Hidden?</span></li>
+              <li><span>Contact</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1>Virtual<br>Car<br>Garage</h1>
+                  <img src="assets/img/carLogo.png" alt="Welcome">
+                </div>
+                <div class="intro--options">
+                  <h3>Why & what?</h3>
+                  <p>For a school project I made a site where u can look at and interact with 3D models via A-frame.
+                    This was made for car enthousiasts.</p>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="work">
+                <h2>Cars</h2>
+                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <a href="html/Fairlady.html"><img src="assets/img/FairladyZ.jpeg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="McLaren"></a>
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <a href="html/RX7.html"><img src="assets/img/Rx7.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="RX7"></a>
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <a href="html/Skyline.html"><img src="assets/img/Skyline.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="RX7"></a>
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                      <a href="html/Porsche.html"><img src="assets/img/Porsche930.jpg"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="RX7"></a>
+                    </div>
+                  </div>
+                  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                      data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                      data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                      data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                      data-carousel-slide-to="3"></button>
+                  </div>
+                  <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                      class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                      </svg>
+                      <span class="sr-only">Previous</span>
+                    </span>
+                  </button>
+                  <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                      class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                      </svg>
+                      <span class="sr-only">Next</span>
+                    </span>
+                  </button>
+                </div>
+                <h5>Car models were made by Lexyc16 and are licensed under Creative Commons Attribution
+                  (http://creativecommons.org/licenses/by/4.0/).</h5>
+
+              </div>
+            </li>
+
+            <li class="l-section section">
+              <div class="about">
+                <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+                  <p class="mb-4 text-xl font-extrabold leading-none  md:text-2xl text-white">Easter
+                    egg hunt</p>
+                  <dl>
+                    <dt class="mb-2 font-semibold leading-none text-white">Info</dt>
+                    <dd class="mb-4 font-light text-white-500 sm:mb-5 ">There are 2 hidden cars in this project both are
+                      available to see after a bit of messing around. Both u can find by changing the URL but to know
+                      how u need to change it u will need some info. Below are some hints meant to help u when u have no
+                      idea on how to start or if u get stuck and u want to find them.</dd>
+                  </dl>
+                  <dl class="flex items-center space-x-6">
+                    <div>
+                      <dt class="mb-2 font-semibold leading-none text-white">1st car</dt>
+                      <dd class="mb-4 font-light text-white-500 sm:mb-5 d">Toyoto Corolla</dd>
+                    </div>
+                    <div>
+                      <dt class="mb-2 font-semibold leading-none text-white">2nd car</dt>
+                      <dd class="mb-4 font-light text-white-500 sm:mb-5 ">?????</dd>
+                    </div>
+                  </dl>
+                  <button data-modal-target="Hint1" data-modal-toggle="Hint1"
+                    class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                    type="button">
+                    Hint 1
+                  </button>
+
+                  <div id="Hint1" tabindex="-1"
+                    class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+                    <div class="relative w-full h-full max-w-md md:h-auto">
+                      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="p-6 text-center">
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Go to a 360° view of a car. Change the name of the "car.html".
+                          </h3>
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">(Press esc to close popup)
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <button data-modal-target="Hint2" data-modal-toggle="Hint2"
+                    class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                    type="button">
+                    Hint 2
+                  </button>
+
+                  <div id="Hint2" tabindex="-1"
+                    class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+                    <div class="relative w-full h-full max-w-md md:h-auto">
+                      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="p-6 text-center">
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Press esc to close popup
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="l-section section">
+              <div class="contact">
+                contact
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">Home</li>
+      <li>Cars</li>
+      <li>Hidden?</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="src/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="src/js/functions-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+</body>
+
+</html>

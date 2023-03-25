@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Model Viewer</title>
+    <meta name="description" content="Model Viewer (VR / AR) • A-Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras@3.3.0/dist/aframe-extras.min.js"></script>
+    <script src="../src/js/model-viewer.js"></script>
+    <script src="../src/js/background-gradient.ts"></script>
+</head>
+
+<body>
+
+    <a-scene renderer="colorManagement: true;" model-viewer="gltfModel: #car; title: Honda NSX">
+        <a-assets>
+            <a-asset-item id="car" src="https://firebasestorage.googleapis.com/v0/b/topics-fff9b.appspot.com/o/Honda%2Fscene.gltf?alt=media&token=ee2f095b-5fbc-48a3-9585-64e01a0af017" response-type="arraybuffer"
+                crossorigin="anonymous"></a-asset-item>
+
+            <a-asset-item id="reticle" src="https://cdn.aframe.io/examples/ar/models/reticle/reticle.gltf"
+                response-type="arraybuffer" crossorigin="anonymous"></a-asset-item>
+
+            <img id="shadow"
+                src="https://cdn.glitch.com/20600112-c04b-492c-8190-8a5ccc06f37d%2Fshadow.png?v=1606338852399"></img>
+        </a-assets>
+    </a-scene>
+</body>
+
+</html>

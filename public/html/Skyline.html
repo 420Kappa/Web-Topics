@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Model Viewer</title>
+    <meta name="description" content="Model Viewer (VR / AR) • A-Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras@3.3.0/dist/aframe-extras.min.js"></script>
+    <script src="../src/js/model-viewer.js"></script>
+    <script src="../src/js/background-gradient.ts"></script>
+</head>
+
+<body>
+    <div class="w-screen h-screen lg:mt-0 lg:col-span-5 lg:flex">
+        <a-scene renderer="colorManagement: true;" model-viewer="gltfModel: #car; title: Nissan Skyline R34" embedded
+            vr-mode-ui="enabled: false">
+            <a-assets>
+                <a-asset-item id="car"
+                    src="https://firebasestorage.googleapis.com/v0/b/topics-fff9b.appspot.com/o/Skyline%2Fscene.gltf?alt=media&token=3f7da32c-206d-4eb4-b163-e4926e9cb950"
+                    response-type="arraybuffer" crossorigin="anonymous"></a-asset-item>
+
+                <a-asset-item id="reticle" src="https://cdn.aframe.io/examples/ar/models/reticle/reticle.gltf"
+                    response-type="arraybuffer" crossorigin="anonymous"></a-asset-item>
+            </a-assets>
+        </a-scene>
+    </div>
+    <section class="h-1/2 bg-white dark:bg-gray-900">
+        <div class="h-1/2 grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="w-screen mr-auto place-self-center lg:col-span-7">
+                <h1
+                    class=" mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    Nissan Skyline GT-R R34 (Godzilla)</h1>
+                <p class="w-1/2 mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    The Skyline GT-R is the flagship of Nissan performance, showcasing many advanced technologies. Most
+                    people know this model from the 2 Fast 2 Furious movie where Paul Walker drove a silver/blue R34 in
+                    his character Brian O'Conner</p>
+                <a href="../../index.html"
+                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    Back to home
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

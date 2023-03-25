@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Model Viewer</title>
+    <meta name="description" content="Model Viewer (VR / AR) • A-Frame">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <section class="h-screen bg-white dark:bg-gray-900">
+        <div class="h-screen grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    Congratulations!</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">U
+                    found the first hidden car (u can walk around it with the arrow- or WASD/ZQSD buttons and drag with
+                    mouse to look around). This is an
+                    illustration to show why its important to think about url design and to block some urls when not
+                    authenticated.</p>
+                <a href="../../index.html"
+                    class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    Back to home
+                </a>
+            </div>
+            <div class="w-full lg:mt-0 lg:col-span-5 lg:flex">
+                <a-scene embedded vr-mode-ui="enabled: false">
+                    <a-entity gltf-model="#car" visible="true" position="-0.286 0 -11" rotation="0 -36.613 0"></a-entity>
+
+                    <a-assets>
+                        <a-asset-item id="car"
+                            src="https://firebasestorage.googleapis.com/v0/b/topics-fff9b.appspot.com/o/Corolla%2Fscene.gltf?alt=media&token=31315b81-7326-4c3d-9f67-11b34462e90b"></a-asset-item>
+                    </a-assets>
+                </a-scene>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

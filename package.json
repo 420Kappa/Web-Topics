@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "typescript": "^4.9.3",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "typescript": "^4.9.5",
     "vite": "^4.2.0"
   },
   "dependencies": {
     "@types/aframe": "^1.2.2",
-    "aframe": "^1.4.1"
+    "aframe": "^1.4.1",
+    "firebase": "^9.18.0"
   }
 }

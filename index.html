@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="src/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -147,9 +146,11 @@
                     <div class="relative w-full h-full max-w-md md:h-auto">
                       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                         <div class="p-6 text-center">
-                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Go to a 360° view of a car. Change the name of the "car.html".
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Go to a 360° view of a
+                            car. Change the name of the "car.html".
                           </h3>
-                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">(Press esc to close popup)
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">(Press esc to close
+                            popup)
                           </h3>
                         </div>
                       </div>
@@ -168,8 +169,57 @@
                     <div class="relative w-full h-full max-w-md md:h-auto">
                       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                         <div class="p-6 text-center">
-                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Press esc to close popup
-                          </h3>
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">In a JS file there is an API key visible. In that file u will need to list the items with a function. Hint 3 has the funtion needed</h3>
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">(Press esc to close popup)</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button data-modal-target="Solution1" data-modal-toggle="Solution1"
+                    class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                    type="button">
+                    Solution 1
+                  </button>
+
+                  <div id="Solution1" tabindex="-1"
+                    class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+                    <div class="relative w-full h-full max-w-md md:h-auto">
+                      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="p-6 text-center">
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">http://localhost:5173/html/Corolla.html is the correct url for the first hidden car</h3>
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">(Press esc to close popup)</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button data-modal-target="Solution2" data-modal-toggle="Solution2"
+                    class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                    type="button">
+                    Solution 2
+                  </button>
+
+                  <div id="Solution2" tabindex="-1"
+                    class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+                    <div class="relative w-full h-full max-w-md md:h-auto">
+                      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="p-6 text-center">
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">function List() {
+                            const ref = firebase.storage().ref('Community');
+                        
+                            ref.listAll().then((res) => {
+                                    res.prefixes.forEach((folderRef) => {
+                        
+                                    });
+                                    res.items.forEach((itemRef) => {
+                                        console.log(itemRef);
+                                    });
+                                }).catch((error) => {
+                                });
+                        }
+                      U need to add this to firebase.js.(to copy u can look at this with devtools) Then in devtools change the UploadImage function to the Link function. After pressing the button all files will be listed in there there will be mystery car = xxx then same as solution 1 with the new name</h3>
+                          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">(Press esc to close popup)</h3>
                         </div>
                       </div>
                     </div>
@@ -180,7 +230,11 @@
 
             <li class="l-section section">
               <div class="contact">
-                contact
+                <input type="file" id="photo" /></br>
+                <button id="upload" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" onclick="uploadImage()">Upload</button>
+                <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+                <script src="src/js/firebase.js"></script>
               </div>
             </li>
           </ul>

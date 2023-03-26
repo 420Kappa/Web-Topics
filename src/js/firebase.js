@@ -27,4 +27,4 @@ const firebaseConfig = {
       })
       .catch(console.error);
   }
-  const errorMsgElement = document.querySelector('span#errorMsg');
+  const errorMsgElement = document.querySelector('span#errorMsg')

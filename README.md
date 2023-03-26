@@ -7,3 +7,6 @@ If u want to copy and edit this project follow these steps:
 3. Run npm install 
 4. Run npm run dev to run this project local
 5. Open this in editor of choice and start coding
+
+When u want to do database changes etc u will need to setup ur own database in firebase.
+https://firebase.google.com/docs/firestore/quickstart 
